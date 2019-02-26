@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
+    <body>
+        <div id="logo-bro"></div>
+        <div id="registration-bro">
+            <!-- image comes in here -->
+            <!-- in the div below goes in our registration form -->
+            <div id="actual-registration-form">
+                <h1>Register</h1>
+                <p>You are a step closer to joinining thousands of people who trust us to back their financial needs. Already have an account?<span><a href="#" id="login">Login</a></span></p>
+                <!-- input boxes and labels -->
+                <div id="emaildiv" >
+                        <label for="Email">Email</label>
+                        <p><input type="text" id="Email" placeholder="Email" required></p>
+                </div>
+                <div id="mobileNumDiv" >
+                        <label for="mobile-number">Mobile Number (linked with BVN)</label>
+                        <p><input type="text" id="mobile-number" placeholder="Mobile Number"></p>
+                </div>
+                <div id="BvnDiv" >
+                        <label for="BVN">BVN</label>
+                        <p><input type="text" id="bvn" placeholder="BVN"></p>
+                </div>
+                <div id="birthdayDiv" >
+                        <label for="date-of-birth">Date of Birth</label>
+                        <p><input type="date" id="date-of-birth" placeholder="Email"></p>
+                </div>
+                <div id="passwordDiv" >
+                        <label for="password">Password</label>
+                        <p><input type="password" id="password" placeholder="Email"></p>
+                </div>
+                <div id="confirmpasswordDiv" >
+                        <label for="confirmPassword">Confirm Password</label>
+                        <p><input type="password" id="confirm-password" placeholder="Please Confirm Password"></p>
+                </div>
+                <div id="submitButtonDiv" >
+                        <button id="submitButton">Submit</button>
+                </div>
+                <!-- my registration form ends here -->
+            </div>
+            <!-- login form starts here...for those who have already signed up-->
+            <div id="login-form">
+                    <h1>Log In</h1>
+                    <p>Don't have an account? <a id="register" href="#">Register</a></p>
+                    <div id="emailLoginDiv" >
+                            <label for="email-login">Email</label>
+                            <p><input type="text" id="email-login" placeholder="Email"></p>
+                    </div>
+                    <div id="passwordDiv" >
+                            <label for="password">Password</label>
+                            <p><input type="text" id="login-password" placeholder="Email"></p>
+                    </div>
+                    <div id="loginSubmit" >
+                            <button id="button-login">Submit</button>
+                    </div>
+            </div>
+
+        </div>
+        <!-- js script tags below -->
+        <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./js/registration_login.js"></script>
+    </body>
+</html>

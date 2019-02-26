@@ -1,0 +1,28 @@
+{
+  "loanApplicants": [
+    {
+      "email": "rukeeojigbo@gmail.com",
+      "mobile": "08183840096",
+      "bvn": "123244",
+      "dateOfBirth": "nov-3rd-21000",
+      "password": "beautifulUju",
+      "id": 1
+    },
+    {
+      "email": "seyimils",
+      "mobile": "xxxxxxxx",
+      "bvn": "xxxxx",
+      "dateOfBirth": "2019-02-08",
+      "password": "xxxxx",
+      "id": 2
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "mobile": "09882",
+      "bvn": "111111",
+      "dateOfBirth": "2019-02-07",
+      "password": "xxx",
+      "id": 3
+    }
+  ]
+}
