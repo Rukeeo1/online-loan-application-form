@@ -46,7 +46,7 @@ $(document).ready(function(){
                 data: loanApplicant ,
                 success: function(newOrder){
                     alert('sucessfully posted');
-                    console.log('loanApplicant');
+                   // console.log('loanApplicant');
                 },
                 error: function(){
                     alert('error saving data');
@@ -67,7 +67,60 @@ $(document).ready(function(){
         var userPassword =$('#login-password').val();
         console.log(userEmail);
         console.log(userPassword);
-        console.log(confirmLogin(userEmail,userPassword));
+    
+
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:3000/loanApplicants",
+            success: function(response){
+                //console.log(response)
+                var backEndOutput;
+                for(i = 0;i<response.length;i++){
+                    console.log(response[i].password);//this guy is given me all the emails...
+                    if(userEmail == response[i].email && userPassword == response[i].password){
+                        alert('name correct');
+                        //do a get request...to loan bucket
+                        //post persons data to new page...then relocate
+                        $.ajax({
+                            type: "GET",
+                            url: "http://localhost:3000/loanBucket",
+                            success: function(response){
+                                console.log(response)
+                                var output;
+                                for(i = 0;i<response.length;i++){
+                                    // console.log(response[i].email)
+                                    if(userEmail == response[i].email){
+                                        console.log(response[i].requestType);
+                                    }
+                                   
+                                    let output;
+                                    // output = `
+                                    //         <div class="returned-div">
+                                    //             <p>${response[i].firstName}
+                                    //             <p><span>Name: </span>${response[i].firstName} + ' ' + ${response[i].lastName} + ' ' +${response[i].level} </p>
+                                    //         </div>
+                                    // `
+                                    // appendToDiv.innerHTML += output;
+                                    // document.getElementById('contain').innerHTML += output
+                                }//a for loop ends here...        
+                            },
+                            error: function(){
+                                alert('error recovering data');
+                            }   
+                        });//the get request ends here....
+                    
+                        //windows relocator...
+                        // window.location.href = 'loan page.html';
+                        window.location.replace("js\loan_page.html");
+                    
+                    }//an if statement ends here....
+                } //a for loop ends here
+                alert('Name not found');
+            },
+            error: function(){
+                alert('error recovering data');
+            }   
+        });//get request ends here
         
 
         
@@ -76,30 +129,7 @@ $(document).ready(function(){
 
     });//button - click function ends here....
 
-    function confirmLogin(userEmail,userPassword){
-        let test;
-        
-        $.ajax({
-            type: "GET",
-            url: "http://localhost:3000/loanApplicants",
-            success: function(response){
-                console.log(response)
-                var backEndOutput;
-                for(i = 0;i<response.length;i++){
-                    console.log(response[i].password);//this guy is given me all the emails...
-                    if(userEmail == response[i].email && userPassword == response[i].password){
-                        test = true;
-                    }
-                }    
-                test = false;   
-            },
-            error: function(){
-                alert('error recovering data');
-            }   
-        });//get request ends here
-        return test;
-    }//confirm login function ends
-
+  
 
    
 
