@@ -1,5 +1,7 @@
 console.log('hello');
 $(document).ready(function(){
+    //hide appended data form...
+    
    
     $('#login-form').hide();//hides login box
     //have an account already? sign-up?
@@ -91,27 +93,30 @@ $(document).ready(function(){
                                     // console.log(response[i].email)
                                     if(userEmail == response[i].email){
                                         console.log(response[i].requestType);
+                                        let output;
+                                    output = `
+                                            <div class="returned-div">
+                                                <p>${response[i].email}
+                                                <p><span>Name: </span>${response[i].requestType} + ' ' + ${response[i].loanAmount} + ' ' +${response[i].level} </p>
+                                            </div>
+                                    `
+                                    // appendToDiv.innerHTML += output;
+                                    console.log(output);
+                                    $('#btn').innerHTML += output
                                     }
                                    
-                                    let output;
-                                    // output = `
-                                    //         <div class="returned-div">
-                                    //             <p>${response[i].firstName}
-                                    //             <p><span>Name: </span>${response[i].firstName} + ' ' + ${response[i].lastName} + ' ' +${response[i].level} </p>
-                                    //         </div>
-                                    // `
-                                    // appendToDiv.innerHTML += output;
-                                    // document.getElementById('contain').innerHTML += output
-                                }//a for loop ends here...        
+                                    
+                                }//a for loop ends here...      
+                                
+                                    //windows relocator...
+                                    //window.location.replace("loan_page.html");
                             },
                             error: function(){
                                 alert('error recovering data');
                             }   
                         });//the get request ends here....
                     
-                        //windows relocator...
-                        // window.location.href = 'loan page.html';
-                        window.location.replace("js\loan_page.html");
+                    
                     
                     }//an if statement ends here....
                 } //a for loop ends here
@@ -131,7 +136,9 @@ $(document).ready(function(){
 
   
 
-   
+   //testing button on loan page
+   $('#btn').click(function(){
+    alert('rukee');});
 
     
 });

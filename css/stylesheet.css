@@ -5,3 +5,7 @@ body{
 #registration-bro{
     display: flex;
 }
+
+.vertical{
+    display:block;
+}

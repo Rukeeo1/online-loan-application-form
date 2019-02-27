@@ -25,19 +25,94 @@
       "id": 3
     }
   ],
-
-  "loanBucket" : [
-      {
-          "email":"richardojigbo@gmail.com",
-          "requestType": "for car repair",
-          "loanAmount": "500",
-          "id":1
-      },
-      {
-        "email":"ojigbo@gmail.com",
-        "requestType": "for house repair",
-        "loanAmount": "600",
-        "id":1
+  "loanBucket": [
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "1232445",
+      "requestType": "for car repair",
+      "loanAmount": "500",
+      "status": "under consideration",
+      "id": 1
+    },
+    {
+      "email": "ojigbo@gmail.com",
+      "bvn": "1232442",
+      "requestType": "for house repair",
+      "loanAmount": "600",
+      "status": "under consideration",
+      "id": 2
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "1232443",
+      "requestType": "for House Rent",
+      "loanAmount": "500",
+      "status": "under consideration",
+      "id": 3
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "",
+      "requestType": "",
+      "loanAmount": "",
+      "status": "under consideration",
+      "id": 4
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "",
+      "requestType": "",
+      "loanAmount": "",
+      "status": "under consideration",
+      "id": 5
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "",
+      "requestType": "",
+      "loanAmount": "",
+      "status": "under consideration",
+      "id": 6
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "",
+      "requestType": "",
+      "loanAmount": "",
+      "status": "under consideration",
+      "id": 7
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "",
+      "requestType": "",
+      "loanAmount": "",
+      "status": "under consideration",
+      "id": 8
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "",
+      "requestType": "",
+      "loanAmount": "",
+      "status": "under consideration",
+      "id": 9
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "",
+      "requestType": "",
+      "loanAmount": "",
+      "status": "under consideration",
+      "id": 10
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "",
+      "requestType": "",
+      "loanAmount": "",
+      "status": "under consideration",
+      "id": 11
     }
   ]
 }

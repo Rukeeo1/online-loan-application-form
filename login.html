@@ -1,0 +1,102 @@
+
+<!-- 
+    this page is linked to the same jquery as registration_login...
+    eventually our goal is get only data from loanBucket to this page...
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- <style>
+           table-column{
+               border: 1px solid grey;
+           }
+            -->
+        <link rel="stylesheet" href="./css/stylesheet.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+       </style>
+    </head>
+    <body>
+            <!-- welcome message -->
+            <!-- welcome message should be hiddend until after sucesfful login -->
+            <div id="welcome-message">
+                    <h1>Welcome <span id="welcome-span"></span></h1>
+            </div>
+            
+
+            <div id="login-form">
+                <h1>Log In</h1>
+                <p>Don't have an account? <a id="register" href="#">Register</a></p>
+                <div id="emailLoginDiv" >
+                        <label for="email-login">Email</label>
+                        <p><input type="text" id="email-login" placeholder="Email"></p>
+                </div>
+                <div id="passwordDiv" >
+                        <label for="password">Password</label>
+                        <p><input type="text" id="login-password" placeholder="Email"></p>
+                </div>
+                <div id="loginSubmit" >
+                        <button id="button-login">Submit</button>
+                </div>
+        </div>
+
+
+        </div>
+        <div id="my-body">
+           
+            <div>
+                    <table class="" id="me" >
+                        <thead>
+                            <th scope="col" id="name">Email</th>
+                            <th scope="col" id="name">Request Type</th>
+                            <th scope="col" id="name">Loan Amount</th>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+
+                    </table>
+            </div>
+        </div>
+        <!-- <form>
+                <div id="welcome">
+                        <h1>Welcome <span id="persons email"></span></h1>
+                </div>
+            <label>
+             
+            </label>
+            <input type="button"  id="btn" placeholder="email">
+        </form> -->
+        <br>
+        <br>
+        <div id="make-a-request-div">
+            <button class=".btn-warning" id="request-loan" >Request a Loan</button>
+        </div>
+        <br>
+        <br>
+        <!-- below here goes a form which i can use to apply for a loan -->
+        <div id="form-div">
+            <!-- <form class=""> -->
+                <div>
+                    <label for="request-email">Email</label>
+                    <p><input type="text" id="request-email" placeholder="Email"></p>
+
+                    <label for="request-bvn">BVN</label>
+                    <p><input type="text" id="request-bvn" placeholder="BVN"></p>
+
+                    <label for="request-nature">Nature of Request</label>
+                    <p><input type="text" id="request-nature" placeholder="Nature of Request"></p>
+
+                    <label for="request-nature">Amount</label>
+                    <p><input type="text" id="request-Amount" placeholder="Amount"></p>
+
+                    <button id="submit-request">Submit</button>
+
+                </div>
+        </div>
+          <!-- js script tags below -->
+          <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+          <scripts src="./js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="./js/append.js"></script>
+    </body>
+</html>
