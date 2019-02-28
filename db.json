@@ -23,43 +23,43 @@
       "dateOfBirth": "2019-02-07",
       "password": "xxx",
       "id": 3
+    },
+    {
+      "email": "okonojigbo@gmail.com",
+      "mobile": "123",
+      "bvn": "123",
+      "dateOfBirth": "2019-02-08",
+      "password": "xxx",
+      "id": 4
+    },
+    {
+      "email": "rukeeojigbo@gmail.comm",
+      "mobile": "08183840096",
+      "bvn": "123412312",
+      "dateOfBirth": "2019-02-15",
+      "password": "xxxx",
+      "id": 5
     }
   ],
   "loanBucket": [
     {
-      "email": "richardojigbo@gmail.com",
-      "bvn": "1232445",
-      "requestType": "for car repair",
-      "loanAmount": "500",
-      "status": "under consideration",
-      "id": 1
-    },
-    {
-      "email": "ojigbo@gmail.com",
-      "bvn": "1232442",
-      "requestType": "for house repair",
-      "loanAmount": "600",
-      "status": "under consideration",
-      "id": 2
-    },
-    {
-      "email": "richardojigbo@gmail.com",
+      "email": "okonojigbo@gmail.com",
       "bvn": "1232443",
       "requestType": "for House Rent",
       "loanAmount": "500",
-      "status": "under consideration",
+      "status": "Approved",
       "id": 3
     },
     {
       "email": "richardojigbo@gmail.com",
-      "bvn": "",
-      "requestType": "",
-      "loanAmount": "",
-      "status": "under consideration",
+      "bvn": "204",
+      "requestType": "for rent",
+      "loanAmount": "6000",
+      "status": "Approved",
       "id": 4
     },
     {
-      "email": "richardojigbo@gmail.com",
+      "email": "",
       "bvn": "",
       "requestType": "",
       "loanAmount": "",
@@ -71,7 +71,7 @@
       "bvn": "",
       "requestType": "",
       "loanAmount": "",
-      "status": "under consideration",
+      "status": "Declined",
       "id": 6
     },
     {
@@ -79,22 +79,14 @@
       "bvn": "",
       "requestType": "",
       "loanAmount": "",
-      "status": "under consideration",
+      "status": "Declined",
       "id": 7
     },
     {
-      "email": "richardojigbo@gmail.com",
-      "bvn": "",
-      "requestType": "",
-      "loanAmount": "",
-      "status": "under consideration",
-      "id": 8
-    },
-    {
-      "email": "richardojigbo@gmail.com",
-      "bvn": "",
-      "requestType": "",
-      "loanAmount": "",
+      "email": "cynthiaugorji@gmail.com",
+      "bvn": "2456586",
+      "requestType": "for make up",
+      "loanAmount": "5000",
       "status": "under consideration",
       "id": 9
     },
@@ -108,11 +100,49 @@
     },
     {
       "email": "richardojigbo@gmail.com",
-      "bvn": "",
-      "requestType": "",
-      "loanAmount": "",
+      "bvn": "8888888",
+      "requestType": "for Transportation",
+      "loanAmount": "500",
       "status": "under consideration",
       "id": 11
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "1111111",
+      "requestType": "for Transportation",
+      "loanAmount": "589",
+      "status": "under consideration",
+      "id": 12
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "8888888",
+      "requestType": "for Transportation",
+      "loanAmount": "20",
+      "status": "under consideration",
+      "id": 13
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "8888888",
+      "requestType": "for food",
+      "loanAmount": "200",
+      "status": "under consideration",
+      "id": 14
+    },
+    {
+      "email": "richardojigbo@gmail.com",
+      "bvn": "8888888",
+      "requestType": "for socks",
+      "loanAmount": "100",
+      "status": "under consideration",
+      "id": 15
+    }
+  ],
+  "admin": [
+    {
+      "email": "admin@gmail.com",
+      "password": "1234"
     }
   ]
 }

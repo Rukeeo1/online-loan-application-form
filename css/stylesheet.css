@@ -2,6 +2,7 @@ body{
     /* background-color:red; */
 }
 
+
 #registration-bro{
     display: flex;
 }
@@ -9,3 +10,61 @@ body{
 .vertical{
     display:block;
 }
+
+/* the code below comes from admin list html and js */
+.from-backend{
+    background-color:grey;
+    margin-top:50px;
+    border-radius:20px;
+}
+
+.from-backend .edit{
+    display: none;
+}
+
+.from-backend.edit .edit{
+    display: initial;
+}
+
+.from-backend.edit .noedit{
+    display:none;
+}
+
+/* the code above comes from admin list html and js */
+
+/* from registration page */
+#logo-bro{
+    display:flex;
+}
+
+#actual-registration-form{
+    border:1px solid ;
+}
+/* from registration page */
+
+/* admin form css */
+.center-block{
+    align:center;
+    width: 300px;
+    text-align:center;
+    margin:auto;
+
+}
+
+/* admin form css */
+
+/* normal login page */
+.center-login{
+  align:center;
+    width: 300px;
+    text-align:center;
+    margin:auto;
+
+}
+
+.request-div{
+    align:center;
+    margin:auto;
+     width: 400px;
+}
+/* normal login page */

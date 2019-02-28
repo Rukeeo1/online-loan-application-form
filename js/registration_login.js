@@ -1,12 +1,19 @@
 console.log('hello');
 $(document).ready(function(){
-    //hide appended data form...
+    //hide appended data form...i think this didnt...work
+    
+    //admin button
+    $('#admin').click(function(){
+        location.replace("./admin_login.html");
+    });
+  
     
    
     $('#login-form').hide();//hides login box
     //have an account already? sign-up?
     $('#login').click(function(){//this login button shows the login form 
-        $('#login-form').show();
+        // $('#login-form').show();
+        location.replace("./login.html");
         $('#actual-registration-form').hide();
        // alert('hellow')
     });
@@ -47,7 +54,8 @@ $(document).ready(function(){
                 url: "http://localhost:3000/loanApplicants",
                 data: loanApplicant ,
                 success: function(newOrder){
-                    alert('sucessfully posted');
+                    alert('Sign Up Succesful...You can now log-in');
+                    location.replace("./login.html");
                    // console.log('loanApplicant');
                 },
                 error: function(){
