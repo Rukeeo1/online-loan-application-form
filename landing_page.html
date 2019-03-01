@@ -1,12 +1,174 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <!-- <link rel="stylesheet" href="./css/stylesheet.css"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
     <body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Loan-UP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="admin">Admin</a>
+      </li>
+      <!-- added a logout here that's hidden on page load and shows on sucessful login -->
+       <li class="nav-item">
+        <a class="nav-link" href="#" id="log-in">Log-In</a>
+      </li>
+      <!--  -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- image background-div -->
+    <div class="image-container">
+        <div id="image-div">
+            <h1>Loan-UP</h1>
+            <p>We make access to credit easy. No guarantors, no collateral, no wahala. You can apply 24/7 and receive funds in your account in as little as 5 minutes. Unlock higher loan amounts and lower interest rates by repaying on time.</p>
+        </div>
+
+           <!-- modal -->
+           <!-- <div class="row" id="buttoned"> -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Register</button>
+            <!-- </div> -->
     
-        <form>
-            <label>
-                Email
-            </label>
-            <input type="text" placeholder="email">
-        </form>
+            <div class="modal fade" id="mymodal">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Sign up</h3><br>
+                        </div>
+                        <div class="modal-body">
+                                <p>You are a step closer to joining thousands of people who trust us to back their financial needs. Already have an account?<span><a href="#" id="login">Login</a></span></p>
+                                <input type="text" id="Email" placeholder="Email" class="form-control" required><br>
+                                <input type="text" id="mobile-number" placeholder="Mobile Number linked With BVN" class="form-control"><br>
+                                <input type="text" id="bvn" placeholder="BVN" class="form-control"><br>
+                                <input type="date" id="date-of-birth" placeholder="Email" class="form-control"><br>
+                                <input type="password" id="password" placeholder="Password" class="form-control"><br>
+                                <input type="password" id="confirm-password" placeholder="Please Confirm Password" class="form-control"><br>
+                        </div>
+                        <div class="modal-footer">
+                                <button id="" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                <button id="submitButton" class="btn btn-primary">Submit</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+    <!-- modal -->
+        
+    </div>
+  
+ 
+
+<!-- modal form -->
+<!-- modal form -->
+        <div id="logo-bro"></div>
+        
+          <div id="testimonial" style="text-align:center; margin-top:20px;">
+            <h1>What people are saying</h1>
+            <div class="flex-div">
+                <div class="box-1">
+                    <h3>Adejumo Adedayo</h3>
+                    <p>Like seriously, Paylater is the best…I started this year just with 7,500…just today, I got 200,000 for a business. Yet, people say Paylater isn’t real, I bet you, it’s real. Just make sure you pay back at the right time. Then, I tell you, your 1,000,000 is around the corner. Thank you so much Paylater.</p>
+                    <button type="button" class="btn btn-primary" >Learn More</button>
+                </div>
+                <div class="box-2">
+                        <h3>Haruna Sidiku</h3>
+                        <p>Like seriously, Paylater is the best…I started this year just with 7,500…just today, I got 200,000 for a business. Yet, people say Paylater isn’t real, I bet you, it’s real. Just make sure you pay back at the right time. Then, I tell you, your 1,000,000 is around the corner. Thank you so much Paylater.</p>
+                        <button type="button" class="btn btn-primary" >Learn More</button>
+                    </div>
+                <div class="box-3">
+                        <h3>Linda Okafor</h3>
+                        <p>Like seriously, Paylater is the best…I started this year just with 7,500…just today, I got 200,000 for a business. Yet, people say Paylater isn’t real, I bet you, it’s real. Just make sure you pay back at the right time. Then, I tell you, your 1,000,000 is around the corner. Thank you so much Paylater.</p>
+                        <button type="button" class="btn btn-primary" >Learn More</button>
+             </div>
+
+            </div>
+
+        </div>
+
+        <!-- footer comes in here -->
+        <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+            <div class="container">
+              <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                  <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                    <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+                    <!-- Rights-->
+                    <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h5>Contacts</h5>
+                  <dl class="contact-list">
+                    <dt>Address:</dt>
+                    <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>email:</dt>
+                    <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>phones:</dt>
+                    <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                  <h5>Links</h5>
+                  <ul class="nav-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row no-gutters social-container">
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+            </div>
+          </footer>
+        <!-- footer is above here -->
+        <!-- js script tags below -->
+        <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="./js/registration_login.js"></script>
     </body>
 </html>

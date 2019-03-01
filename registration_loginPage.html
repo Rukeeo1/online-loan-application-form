@@ -8,7 +8,7 @@
     </head>
     <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Decagon Loan Application</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -66,35 +66,35 @@
         
         <div id="registration-bro">
             <!-- image comes in here -->
-            <img src="./img/money.png" alt="Smiley face" height="450px" width="450px">
+            <!-- <img src="./img/money.png" alt="Smiley face" height="450px" width="450px"> -->
             <!-- in the div below goes in our registration form -->
             <div id="actual-registration-form" class="jumbotron">
                 <h1>Register</h1>
                 <p>You are a step closer to joining thousands of people who trust us to back their financial needs. Already have an account?<span><a href="#" id="login">Login</a></span></p>
                 <!-- input boxes and labels -->
                 <div id="emaildiv" >
-                        <label for="Email">Email</label>
-                        <p><input type="text" id="Email" placeholder="Email" class="form-control" required></p>
+                        <!-- <label for="Email">Email</label> -->
+                        <input type="text" id="Email" placeholder="Email" class="form-control" required>
                 </div>
                 <div id="mobileNumDiv" >
                         <label for="mobile-number">Mobile Number (linked with BVN)</label>
-                        <p><input type="text" id="mobile-number" placeholder="Mobile Number"></p>
+                        <p><input type="text" id="mobile-number" placeholder="Mobile Number" class="form-control"></p>
                 </div>
                 <div id="BvnDiv" >
-                        <label for="BVN">BVN</label>
-                        <p><input type="text" id="bvn" placeholder="BVN"></p>
+                        <!-- <label for="BVN">BVN</label> -->
+                        <p><input type="text" id="bvn" placeholder="BVN" class="form-control"></p>
                 </div>
                 <div id="birthdayDiv" >
-                        <label for="date-of-birth">Date of Birth</label>
-                        <p><input type="date" id="date-of-birth" placeholder="Email"></p>
+                        <!-- <label for="date-of-birth">Date of Birth</label> -->
+                        <p><input type="date" id="date-of-birth" placeholder="Email" class="form-control"></p>
                 </div>
                 <div id="passwordDiv" >
                         <label for="password">Password</label>
-                        <p><input type="password" id="password" placeholder="Email"></p>
+                        <p><input type="password" id="password" placeholder="Email" class="form-control"></p>
                 </div>
                 <div id="confirmpasswordDiv" >
                         <label for="confirmPassword">Confirm Password</label>
-                        <p><input type="password" id="confirm-password" placeholder="Please Confirm Password"></p>
+                        <p><input type="password" id="confirm-password" placeholder="Please Confirm Password" class="form-control"></p>
                 </div>
                 <div id="submitButtonDiv" >
                         <button id="submitButton" class="btn btn-primary">Submit</button>
@@ -110,10 +110,10 @@
                             <label for="email-login">Email</label>
                             <p><input type="text" id="email-login" placeholder="Email"></p>
                     </div>
-                    <div id="passwordDiv" >
+                    <!-- <div id="passwordDiv" > -->
                             <label for="password">Password</label>
                             <p><input type="text" id="login-password" placeholder="Email"></p>
-                    </div>
+                    <!-- </div> -->
                     <div id="loginSubmit" >
                             <button type="button" class="btn btn-primary" id="button-login" >Submit</button>
                             <!--  -->
@@ -123,6 +123,53 @@
             </div>
 
         </div>
+        <!-- footer comes in here -->
+        <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+            <div class="container">
+              <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                  <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                    <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+                    <!-- Rights-->
+                    <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h5>Contacts</h5>
+                  <dl class="contact-list">
+                    <dt>Address:</dt>
+                    <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>email:</dt>
+                    <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>phones:</dt>
+                    <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                  <h5>Links</h5>
+                  <ul class="nav-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row no-gutters social-container">
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+            </div>
+          </footer>
+        <!-- footer is above here -->
         <!-- js script tags below -->
         <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="./js/registration_login.js"></script>

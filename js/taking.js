@@ -44,70 +44,43 @@ $(document).ready(function(){
                                                     </td>
                                                     <td><button class="deleteBtn btn btn-danger">Delete</button></td>
                                                     <td>
-                                                        <button data-toggle="modal" toggle-target="exampleModal" class="editBtn noedit btn btn-success" id="${response[i].id}">Edit</button>
-                                                        <button class="saveEdit edit btn btn-success">Save</button>
-                                                        <button class="cancelEdit edit btn btn-secondary">Cancel</button>
+                                                    <div class="row" id="buttoned">
+                                                    <button type="button" id="request-loan" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Update</button>
+                                                    </div>
                                                     </td>
                                                     </tr> 
+                 
+      
+              <div class="modal fade" id="mymodal">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h3>Edit Form</h3><br>
+                          </div>
+                          <div class="modal-body">
+                                  <p>Please fill the form below to make a request</p>
+                                  <input type="text" id="request-email" placeholder="Email" class="form-control" required><br>
+                                  <input type="text" id="request-bvn" placeholder="BVN" class="form-control"><br>
+                                  <input type="text" id="request-nature" placeholder="Nature Of Request" class="form-control"><br>
+                                  <input type="text" id="request-Amount" placeholder="Amount" class="form-control"><br>
+                                  <select id="status" class="form-control"><option>Approved</option><option>Declined</option><option>Under Consideration</option></select>          
+                                  </div>
+                          <div class="modal-footer">
+                                  <button id="" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                  <button id="submit-request" class="btn btn-primary">Submit</button>
+                          </div>
+      
+                      </div>
+      
+                  </div>
+              </div>
                                                 </tbody>
             
                                                 `
                                                 // <td><button class="cancelEdit edit btn btn-secondary">Cancel</button></td>
                                                 //     <td><button class="saveEdit edit btn btn-success">Save</button></td> 
                                                 document.getElementById('my-table').innerHTML += output
-                                      /*
-                                      output = `
-                                                <div class="from-backend jumbotron" id="${response[i].id}"
-                                                    <p>
-                                                        <strong>Email:</strong>
-                                                        <span class="noedit email">${response[i].email}</span>
-                                                        <input type="text" class="edit email"/>
-                                                    </p>
-                                                    <p>
-                                                        <strong>BVN:</strong>
-                                                        <span class="noedit bvn">${response[i].bvn}</span>
-                                                        <input type="text" class="edit bvn"/>
-                                                    </p>
-                                                    <p>
-                                                        <strong>Request Type:</strong>
-                                                        <span class="noedit request-type">${response[i].requestType}</span>
-                                                        <input type="text" class="edit request-type"/>
-                                                    </p>
-                                                    <p>
-                                                        <strong>Amount:</strong>
-                                                        <span class="noedit loan-amount">${response[i].loanAmount}</span>
-                                                        <input type="text" class="edit loan-amount"/>
-                                                    </p>
-                                                    <p>
-                                                        <strong>Status:</strong>
-                                                        <span class="noedit status">${response[i].status}</span>
-                                                        <input type="text" class="edit status"/>
-                                                    </p>
-                                                    <button class="deleteBtn btn btn-danger">Delete</button>
-                                                    <button class="editBtn noedit btn btn-success" id="${response[i].id}">Edit</button>
-                                                    <button class="cancelEdit edit btn btn-secondary">Cancel</button>
-                                                    <button class="saveEdit edit btn btn-success">Save</button>
-                                                </div>
-                                                `
-                                                */ 
-                                               //my normal output ends above...
-                                               /*
-                                                    sample append
-
-                                                    <tbody>
-                                                    <tr id="${response[i].id}">
-                                                        <td>${response[i].email}</td>
-                                                        <td>${response[i].requestType}</td>
-                                                        <td>${response[i].loanAmount}</td>
-                                                        <td>${response[i].status}</td>
-                                                    </tr>
-                                            </tbody>
-
-                                               */
-                                                // console.log(output)
-                                                // $('#appended-data').innerHTML += output;
-                                                //  document.getElementById('appended-data').innerHTML += output
-                                  }   
+                                         }   //forloopends here...
                                   
                                 },
                                 error: function(){
@@ -118,7 +91,7 @@ $(document).ready(function(){
                         
                 //delete function...
                 $('#my-table').delegate('.deleteBtn', 'click', function(){
-                    // alert('this is delete');
+                    alert('this is delete');
                     //grab the target id for delete
                    // let deleteForDelete = $(this).closest('div').attr('id');
                    let deleteForDelete = $(this).closest('tr').attr('id');
@@ -142,7 +115,7 @@ $(document).ready(function(){
             //adding edit functionality...
             $('#my-table').delegate('.editBtn','click', function(){
                 // console.log('edit')
-                // alert(' this is edit')
+                alert(' this is edit')
                 //let storeEditlId = $(this).closest('div').attr('data-id');
                 var $tableRow = $(this).closest('tr');//onclick capturet the div that holds these guys
                 // $div.find('input.email').val($div.find('span.email').html());
@@ -162,19 +135,27 @@ $(document).ready(function(){
 
         //saveEdit button
         $('#my-table').delegate('.saveEdit', 'click', function(){
-            // alert('this is save edit');
+            alert('this is save edit');
             var $div = $(this).closest('tr');
             // console.log($div);
             // var storeEditlId = $div.attr('id');
 
             
-             var editedData =  {
-                    "email": $div.find('input.email').val(),
-                    "bvn": $div.find('input.bvn').val(),
-                    "requestType": $div.find('input.request-type').val(),
-                    "loanAmount":  $div.find('input.loan-amount').val(),
-                    "status": $div.find('input.status').val()
-            }
+            //  var editedData =  {
+            //         "email": $div.find('input.email').val(),
+            //         "bvn": $div.find('input.bvn').val(),
+            //         "requestType": $div.find('input.request-type').val(),
+            //         "loanAmount":  $div.find('input.loan-amount').val(),
+            //         "status": $div.find('input.status').val()
+            // }
+
+            var editedData =  {
+                "email": $div.find('input.email').val(),
+                "bvn": $div.find('input.bvn').val(),
+                "requestType": $div.find('input.request-type').val(),
+                "loanAmount":  $div.find('input.loan-amount').val(),
+                "status": $div.find('input.status').val()
+        }
             
             
             console.log(editedData);

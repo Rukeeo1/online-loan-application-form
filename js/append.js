@@ -1,10 +1,11 @@
 $(document).ready(function(){
+    var array = [];
     $('#register').click(function(){
-        location.replace("./registration_loginPage.html");
+        location.replace("./landing_page.html");
     });
     //home button
     $('#home').click(function(){
-        location.replace("./registration_loginPage.html");
+        location.replace("./landing_page.html");
     });
     //admin button
     $('#admin').click(function(){
@@ -12,7 +13,7 @@ $(document).ready(function(){
     });
      //log-out
     $('#log-out').click(function(){
-        location.replace("./registration_loginPage.html");
+        location.replace("./landing_page.html");
     });
 
     //request a loan...button below
@@ -73,7 +74,7 @@ $(document).ready(function(){
                             url: "http://localhost:3000/loanBucket",
                             success: function(response){
                                 console.log(response)
-                                var array = [];//added this 28.
+                                // var array = [];//added this 28.
                                 var output;
                                 for(i = 0;i<response.length;i++){
                                     // console.log(response[i].email)
@@ -84,7 +85,7 @@ $(document).ready(function(){
                                         output = `
                                             <tbody>
                                                     <tr id="${response[i].id}">
-                                                        <td>${response[i].email}</td>
+                                                    <td>${response[i].email}</span></td>
                                                         <td>${response[i].requestType}</td>
                                                         <td>${response[i].loanAmount}</td>
                                                         <td>${response[i].status}</td>
@@ -160,6 +161,7 @@ $(document).ready(function(){
                     alert('Loan Request Successful');
                     console.log(response);
                     //i am manipulating this part of the code...28th...02
+                    array.push(Number(response.loanAmount));//added this onthe first
 
                              let output;
                                         output = `
@@ -174,6 +176,10 @@ $(document).ready(function(){
                                         
                                                 `
                                     document.getElementById('me').innerHTML += output;
+                                    // var x
+                                    document.getElementById('green').innerHTML = "=N=" + array.reduce((a,b)=> a + b,0);
+                                    document.getElementById('welcome-span').innerHTML = response.email
+                                    
                       //i am manipulating the above part of the code...28th...02
                      $('#login-form').hide();
                         $('#my-body').show();

@@ -1,11 +1,16 @@
 $(document).ready(function(){
     $('#home').click(function(){
-        location.replace("./registration_loginPage.html");
+        location.replace("./landing_page.html");
     });
 
     $('#log-out').click(function(){
-        location.replace("./registration_loginPage.html");
+        location.replace("./landing_page.html");
     });
+
+    $('#admin').click(function(){
+        location.replace("./landing_page.html");
+    });
+
 
     
     //we are trying to enable a login for the admin....

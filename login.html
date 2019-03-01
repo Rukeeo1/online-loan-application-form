@@ -12,51 +12,54 @@
            }
             -->
         <link rel="stylesheet" href="./css/stylesheet.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     </head>
     <body>
     <!-- adding nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Decagon Loan Application</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark btn-success" id="login-nav">
+  
+    <!-- <nav> -->
+        <a class="navbar-brand" href="#">Loan-UP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#" id="home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" id="admin">Admin</a>
-      </li>
-       <!-- added a logout here that's hidden on page load and shows on sucessful login -->
-       <li class="nav-item">
-        <a class="nav-link" href="#" id="log-out">Log-Out</a>
-      </li>
-      <!--  -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" id="home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="admin">Admin</a>
+            </li>
+            <!-- added a logout here that's hidden on page load and shows on sucessful login -->
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="log-out">Log-Out</a>
+            </li>
+            <!--  -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+  </nav>
     <!-- added nav bar above -->
             <!-- welcome message -->
             <!-- welcome message should be hiddend until after sucesfful login -->
@@ -64,22 +67,25 @@
                     <h1>Welcome <span id="welcome-span"></span><button id="green" class="btn btn-danger">green</button><button>Red</button></h1>
             </div>
             
-
-            <div id="login-form" class='center-login jumbotron' >
-                <h1>Log In</h1>
-                <p>Don't have an account? <a id="register" href="#">Register</a></p>
-                <div id="emailLoginDiv" >
-                        <label for="email-login">Email</label>
-                        <p><input type="text" id="email-login" placeholder="Email"></p>
-                </div>
-                <div id="passwordDiv" >
-                        <label for="password">Password</label>
-                        <p><input type="password" id="login-password" placeholder="password"></p>
-                </div>
-                <div id="loginSubmit" >
-                        <button id="button-login">Submit</button>
-                </div>
-        </div>
+            <!-- <img src="./img/laptop.jpg"> -->
+            <div id="" class="rukee">
+              <div id="login-form" class='center-login btn-success' >
+                
+                  <h1>Log In</h1>
+                  <p>Don't have an account? <a id="register" href="#">Register</a></p>
+                  <div id="emailLoginDiv" >
+                          <label for="email-login">Email</label>
+                          <p><input type="text" id="email-login" placeholder="Email"></p>
+                  </div>
+                  <div id="passwordDiv" >
+                          <label for="password">Password</label>
+                          <p><input type="password" id="login-password" placeholder="password"></p>
+                  </div>
+                  <div id="loginSubmit" >
+                          <button id="button-login" class="btn-success">Submit</button>
+                  </div>
+            </div>
+          </div>
 
 
         </div>
@@ -109,16 +115,48 @@
             </label>
             <input type="button"  id="btn" placeholder="email">
         </form> -->
+        <!-- i am bringing in a modal -->
+         <!-- modal -->
+           <div class="row" id="buttoned">
+              <button type="button" id="request-loan" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Click to Make a REQUEST</button>
+              </div>
+      
+              <div class="modal fade" id="mymodal">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h3>Request Form</h3><br>
+                          </div>
+                          <div class="modal-body">
+                                  <p>Please fill the form below to make a request</p>
+                                  <input type="text" id="request-email" placeholder="Email" class="form-control" required><br>
+                                  <input type="text" id="request-bvn" placeholder="BVN" class="form-control"><br>
+                                  <input type="text" id="request-nature" placeholder="Nature Of Request" class="form-control"><br>
+                                  <input type="text" id="request-Amount" placeholder="Amount" class="form-control"><br>
+                                 
+                          </div>
+                          <div class="modal-footer">
+                                  <button id="" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                  <a href="#me"><button id="submit-request" class="btn btn-primary">Submit</button></a>
+                          </div>
+      
+                      </div>
+      
+                  </div>
+              </div>
+      <!-- modal -->
+          
+        <!--  -->
         <br>
         <br>
         <div id="make-a-request-div">
-            <button id="request-loan" class="btn btn-success"><a href="#form-div">Request a Loan</a></button>
+            <!-- <button id="request-loan" class="btn btn-success"><a href="#form-div">Request a Loan</a></button> -->
         </div>
         <br>
         <br>
         <!-- below here goes a form which i can use to apply for a loan -->
-        <div id="form-div" class="request-div jumbotron">
-            <!-- <form class=""> -->
+        <!-- <div id="form-div" class="request-div jumbotron">
+            <form class=""> 
             <p class="request-div"><em>Please fill the form below to make a request</em></p>
                 <div>
                     <label for="request-email">Email</label>
@@ -135,9 +173,60 @@
 
                     <button id="submit-request">Submit</button>
                 </div>
-        </div>
+        </div> -->
+
+         <!-- footer comes in here -->
+         <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+            <div class="container">
+              <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                  <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                    <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+                    <!-- Rights-->
+                    <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h5>Contacts</h5>
+                  <dl class="contact-list">
+                    <dt>Address:</dt>
+                    <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>email:</dt>
+                    <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>phones:</dt>
+                    <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                  <h5>Links</h5>
+                  <ul class="nav-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row no-gutters social-container">
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+              <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+            </div>
+          </footer>
           <!-- js script tags below -->
           <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
           <scripts src="./js/bootstrap.min.js"></script>
           <script type="text/javascript" src="./js/append.js"></script>
     </body>

@@ -1,10 +1,13 @@
 console.log('hello');
 $(document).ready(function(){
-    //hide appended data form...i think this didnt...work
-    
+        
     //admin button
     $('#admin').click(function(){
         location.replace("./admin_login.html");
+    });
+
+    $('#log-in').click(function(){
+        location.replace("./login.html");
     });
   
     
