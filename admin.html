@@ -1,0 +1,69 @@
+
+<!-- 
+    this page is linked to the same jquery as registration_login...
+    eventually our goal is get only data from loanBucket to this page...
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+           table-column{
+               border: 1px solid grey;
+           }
+        
+       </style>
+    </head>
+    <body>
+            <!-- welcome message -->
+            <!-- welcome message should be hiddend until after sucesfful login -->
+            <div id="welcome-message">
+                    <h1>Welcome Admin</span></h1>
+            </div>
+            
+
+            <div id="login-form">
+                <h1>Log In</h1>
+                <p>Don't have an account? <a id="register" href="#">Register</a></p>
+                <div id="emailLoginDiv" >
+                        <label for="email-login">Email</label>
+                        <p><input type="text" id="email-login" placeholder="Email"></p>
+                </div>
+                <div id="passwordDiv" >
+                        <label for="password">Password</label>
+                        <p><input type="text" id="login-password" placeholder="Email"></p>
+                </div>
+                <div id="loginSubmit" >
+                        <button id="button-login">Submit</button>
+                </div>
+        </div>
+
+
+        </div>
+        <div id="my-body">
+           
+            <div>
+                <table id="loan-table" border="1px">
+                    <tr>
+                        <th>Email</th>
+                        <th>Loan Amount</th>
+                        <th>Request type</th>
+                        <th>Status</th>     
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <form>
+                <div id="welcome">
+                        <!-- <h1>Welcome <span id="persons email"></span></h1> -->
+                </div>
+            <label>
+             
+            </label>
+            <input type="button"  id="btn" placeholder="email">
+        </form>
+          <!-- js script tags below -->
+          <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+          <script type="text/javascript" src="./js/append.js"></script>
+    </body>
+</html>

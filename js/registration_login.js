@@ -1,10 +1,22 @@
 console.log('hello');
 $(document).ready(function(){
+        
+    //admin button
+    $('#admin').click(function(){
+        location.replace("./admin_login.html");
+    });
+
+    $('#log-in').click(function(){
+        location.replace("./login.html");
+    });
+  
+    
    
     $('#login-form').hide();//hides login box
     //have an account already? sign-up?
     $('#login').click(function(){//this login button shows the login form 
-        $('#login-form').show();
+        // $('#login-form').show();
+        location.replace("./login.html");
         $('#actual-registration-form').hide();
        // alert('hellow')
     });
@@ -45,8 +57,9 @@ $(document).ready(function(){
                 url: "http://localhost:3000/loanApplicants",
                 data: loanApplicant ,
                 success: function(newOrder){
-                    alert('sucessfully posted');
-                    console.log('loanApplicant');
+                    alert('Sign Up Succesful...You can now log-in');
+                    location.replace("./login.html");
+                   // console.log('loanApplicant');
                 },
                 error: function(){
                     alert('error saving data');
@@ -67,7 +80,63 @@ $(document).ready(function(){
         var userPassword =$('#login-password').val();
         console.log(userEmail);
         console.log(userPassword);
-        console.log(confirmLogin(userEmail,userPassword));
+    
+
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:3000/loanApplicants",
+            success: function(response){
+                //console.log(response)
+                var backEndOutput;
+                for(i = 0;i<response.length;i++){
+                    console.log(response[i].password);//this guy is given me all the emails...
+                    if(userEmail == response[i].email && userPassword == response[i].password){
+                        alert('name correct');
+                        //do a get request...to loan bucket
+                        //post persons data to new page...then relocate
+                        $.ajax({
+                            type: "GET",
+                            url: "http://localhost:3000/loanBucket",
+                            success: function(response){
+                                console.log(response)
+                                var output;
+                                for(i = 0;i<response.length;i++){
+                                    // console.log(response[i].email)
+                                    if(userEmail == response[i].email){
+                                        console.log(response[i].requestType);
+                                        let output;
+                                    output = `
+                                            <div class="returned-div">
+                                                <p>${response[i].email}
+                                                <p><span>Name: </span>${response[i].requestType} + ' ' + ${response[i].loanAmount} + ' ' +${response[i].level} </p>
+                                            </div>
+                                    `
+                                    // appendToDiv.innerHTML += output;
+                                    console.log(output);
+                                    $('#btn').innerHTML += output
+                                    }
+                                   
+                                    
+                                }//a for loop ends here...      
+                                
+                                    //windows relocator...
+                                    //window.location.replace("loan_page.html");
+                            },
+                            error: function(){
+                                alert('error recovering data');
+                            }   
+                        });//the get request ends here....
+                    
+                    
+                    
+                    }//an if statement ends here....
+                } //a for loop ends here
+                alert('Name not found');
+            },
+            error: function(){
+                alert('error recovering data');
+            }   
+        });//get request ends here
         
 
         
@@ -76,32 +145,11 @@ $(document).ready(function(){
 
     });//button - click function ends here....
 
-    function confirmLogin(userEmail,userPassword){
-        let test;
-        
-        $.ajax({
-            type: "GET",
-            url: "http://localhost:3000/loanApplicants",
-            success: function(response){
-                console.log(response)
-                var backEndOutput;
-                for(i = 0;i<response.length;i++){
-                    console.log(response[i].password);//this guy is given me all the emails...
-                    if(userEmail == response[i].email && userPassword == response[i].password){
-                        test = true;
-                    }
-                }    
-                test = false;   
-            },
-            error: function(){
-                alert('error recovering data');
-            }   
-        });//get request ends here
-        return test;
-    }//confirm login function ends
+  
 
-
-   
+   //testing button on loan page
+   $('#btn').click(function(){
+    alert('rukee');});
 
     
 });

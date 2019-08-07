@@ -9,7 +9,7 @@
     <body>
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Decagon Loan Application</a>
+  <a class="navbar-brand" href="#">Loan-UP</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -24,7 +24,7 @@
       </li>
       <!-- added a logout here that's hidden on page load and shows on sucessful login -->
        <li class="nav-item">
-        <a class="nav-link" href="#" id="log-out">Log-In</a>
+        <a class="nav-link" href="#" id="log-in">Log-In</a>
       </li>
       <!--  -->
       <li class="nav-item dropdown">
@@ -48,81 +48,75 @@
     </form>
   </div>
 </nav>
-      <!-- <div class="container-fluid">
-    <div class="nav nav-pills nav-justified bg-primary">
-      <a class="navbar-brand" href="#">Decagon Loan System</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Admin</a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-    </ul>
-  </div>
-</nav> -->
-    <!-- nav bar -->
+<!-- image background-div -->
+    <div class="image-container">
+        <div id="image-div">
+            <h1>Loan-UP</h1>
+            <p>We make access to credit easy. No guarantors, no collateral, no wahala. You can apply 24/7 and receive funds in your account in as little as 5 minutes. Unlock higher loan amounts and lower interest rates by repaying on time.</p>
+        </div>
 
+           <!-- modal -->
+           <!-- <div class="row" id="buttoned"> -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Register</button>
+            <!-- </div> -->
+    
+            <div class="modal fade" id="mymodal">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Sign up</h3><br>
+                        </div>
+                        <div class="modal-body">
+                                <p>You are a step closer to joining thousands of people who trust us to back their financial needs. Already have an account?<span><a href="#" id="login">Login</a></span></p>
+                                <input type="text" id="Email" placeholder="Email" class="form-control" required><br>
+                                <input type="text" id="mobile-number" placeholder="Mobile Number linked With BVN" class="form-control"><br>
+                                <input type="text" id="bvn" placeholder="BVN" class="form-control"><br>
+                                <input type="date" id="date-of-birth" placeholder="Email" class="form-control"><br>
+                                <input type="password" id="password" placeholder="Password" class="form-control"><br>
+                                <input type="password" id="confirm-password" placeholder="Please Confirm Password" class="form-control"><br>
+                        </div>
+                        <div class="modal-footer">
+                                <button id="" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                <button id="submitButton" class="btn btn-primary">Submit</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+    <!-- modal -->
+        
+    </div>
+  
+ 
+
+<!-- modal form -->
+<!-- modal form -->
         <div id="logo-bro"></div>
         
-        <div id="registration-bro">
-            <!-- image comes in here -->
-            <!-- <img src="./img/money.png" alt="Smiley face" height="450px" width="450px"> -->
-            <!-- in the div below goes in our registration form -->
-            <div id="actual-registration-form" class="jumbotron">
-                <h1>Register</h1>
-                <p>You are a step closer to joining thousands of people who trust us to back their financial needs. Already have an account?<span><a href="#" id="login">Login</a></span></p>
-                <!-- input boxes and labels -->
-                <div id="emaildiv" >
-                        <!-- <label for="Email">Email</label> -->
-                        <input type="text" id="Email" placeholder="Email" class="form-control" required>
+          <div id="testimonial" style="text-align:center; margin-top:20px;">
+            <h1>What people are saying</h1>
+            <div class="flex-div">
+                <div class="box-1">
+                    <h3>Adejumo Adedayo</h3>
+                    <p>Like seriously, Paylater is the best…I started this year just with 7,500…just today, I got 200,000 for a business. Yet, people say Paylater isn’t real, I bet you, it’s real. Just make sure you pay back at the right time. Then, I tell you, your 1,000,000 is around the corner. Thank you so much Paylater.</p>
+                    <button type="button" class="btn btn-primary" >Learn More</button>
                 </div>
-                <div id="mobileNumDiv" >
-                        <label for="mobile-number">Mobile Number (linked with BVN)</label>
-                        <p><input type="text" id="mobile-number" placeholder="Mobile Number" class="form-control"></p>
-                </div>
-                <div id="BvnDiv" >
-                        <!-- <label for="BVN">BVN</label> -->
-                        <p><input type="text" id="bvn" placeholder="BVN" class="form-control"></p>
-                </div>
-                <div id="birthdayDiv" >
-                        <!-- <label for="date-of-birth">Date of Birth</label> -->
-                        <p><input type="date" id="date-of-birth" placeholder="Email" class="form-control"></p>
-                </div>
-                <div id="passwordDiv" >
-                        <label for="password">Password</label>
-                        <p><input type="password" id="password" placeholder="Email" class="form-control"></p>
-                </div>
-                <div id="confirmpasswordDiv" >
-                        <label for="confirmPassword">Confirm Password</label>
-                        <p><input type="password" id="confirm-password" placeholder="Please Confirm Password" class="form-control"></p>
-                </div>
-                <div id="submitButtonDiv" >
-                        <button id="submitButton" class="btn btn-primary">Submit</button>
-                </div>
-                <!-- my registration form ends here -->
-            </div>
+                <div class="box-2">
+                        <h3>Haruna Sidiku</h3>
+                        <p>Like seriously, Paylater is the best…I started this year just with 7,500…just today, I got 200,000 for a business. Yet, people say Paylater isn’t real, I bet you, it’s real. Just make sure you pay back at the right time. Then, I tell you, your 1,000,000 is around the corner. Thank you so much Paylater.</p>
+                        <button type="button" class="btn btn-primary" >Learn More</button>
+                    </div>
+                <div class="box-3">
+                        <h3>Linda Okafor</h3>
+                        <p>Like seriously, Paylater is the best…I started this year just with 7,500…just today, I got 200,000 for a business. Yet, people say Paylater isn’t real, I bet you, it’s real. Just make sure you pay back at the right time. Then, I tell you, your 1,000,000 is around the corner. Thank you so much Paylater.</p>
+                        <button type="button" class="btn btn-primary" >Learn More</button>
+             </div>
 
-            <!-- login form starts here...for those who have already signed up-->
-            <div id="login-form">
-                    <h1>Log In</h1>
-                    <p>Don't have an account? <a id="register" href="#">Register</a></p>
-                    <div id="emailLoginDiv" >
-                            <label for="email-login">Email</label>
-                            <p><input type="text" id="email-login" placeholder="Email"></p>
-                    </div>
-                    <!-- <div id="passwordDiv" > -->
-                            <label for="password">Password</label>
-                            <p><input type="text" id="login-password" placeholder="Email"></p>
-                    <!-- </div> -->
-                    <div id="loginSubmit" >
-                            <button type="button" class="btn btn-primary" id="button-login" >Submit</button>
-                            <!--  -->
-                         <button type="button" class="btn btn-primary">Primary</button>   
-                    </div>
-                    
             </div>
 
         </div>
+
         <!-- footer comes in here -->
         <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
             <div class="container">
@@ -172,6 +166,9 @@
         <!-- footer is above here -->
         <!-- js script tags below -->
         <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
         <script type="text/javascript" src="./js/registration_login.js"></script>
     </body>
 </html>
